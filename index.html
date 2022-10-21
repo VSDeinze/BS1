@@ -38,7 +38,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:13, minZoom:8
-        }).fitBounds([[49.52017649525043,1.7868636779687888],[51.639502521777665,7.546957511123844]]);
+        }).fitBounds([[50.78440701988246,3.0365705594348342],[51.362473325284796,4.468609888521844]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -103,7 +103,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(225,155,199,0.4980392156862745)',
-                interactive: true,
+                interactive: false,
             }
         }
         map.createPane('pane_Multicam_BG_1');
@@ -111,7 +111,7 @@
         map.getPane('pane_Multicam_BG_1').style['mix-blend-mode'] = 'normal';
         var layer_Multicam_BG_1 = new L.geoJson(json_Multicam_BG_1, {
             attribution: '',
-            interactive: true,
+            interactive: false,
             dataVar: 'json_Multicam_BG_1',
             layerName: 'layer_Multicam_BG_1',
             pane: 'pane_Multicam_BG_1',
