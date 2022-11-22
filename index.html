@@ -38,7 +38,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:13, minZoom:8
-        }).fitBounds([[49.38179030687331,1.8492776985485535],[51.566895772036204,7.600304118852858]]);
+        }).fitBounds([[49.2680813541427,1.4508434046358631],[51.79400173721285,7.230338478586371]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -437,6 +437,7 @@
             style: style_AD_4_Province2_5_0,
         });
         bounds_group.addLayer(layer_AD_4_Province2_5);
+        map.addLayer(layer_AD_4_Province2_5);
         var osmGeocoder = new L.Control.Geocoder({
             collapsed: true,
             position: 'topleft',
